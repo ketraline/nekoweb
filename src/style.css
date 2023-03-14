@@ -281,6 +281,6 @@ a:active {
   padding:20px;
   padding-top:5px;
   padding-bottom:5px;
-  background-color:hsla(334, 76%, 19%, 0.57);
+  background-color:hsla(334, 76%, 19%);
   border-radius: 5px;
 }
