@@ -271,6 +271,15 @@ a:active {
   }
 }
 
+.arttab{
+  width:80px;
+  height: 30px;
+  border:none;
+  padding:20px;
+  background-color:hsla(334, 76%, 19%);
+  border-radius: 5px;
+}
+
 .subtab{
   width:80px;
   height: 30px;
