@@ -1,0 +1,283 @@
+<style>
+img {
+    vertical-align:middle;
+    height: 60px;
+}
+
+h1, h3, h4{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+font-family: 'Coda', sans-serif;
+color:#272727;
+font-size:16px;
+background: linear-gradient(0deg, #493269, #813d59, #cb5867, #e08572, #e6b646, #e08572, #cb5867, #813d59,  #493269);
+background-size: 100% 800%;
+background-attachment:fixed;
+animation: gradient 15s ease infinite;
+} 
+@keyframes gradient {
+0% {background-position: 0% 50%;}
+50% {background-position: 0% 0%;}
+100% {background-position: 0% 50%;}
+}
+
+#hoberlogo{
+  position: absolute;
+  top: 1px;
+  right: 200px;
+  width:200px;
+}
+
+.zoom input[type=checkbox] {
+  display: none
+}
+
+.zoom img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in
+}
+
+.zoom input[type=checkbox]:checked~img {
+  transform: scale(2);
+  cursor: zoom-out
+}
+
+.artexam1{
+    border:solid #494949 2px;
+    height: 300px;
+    position:left;
+}
+
+.artexam2{
+    border:solid #494949 2px;
+    height: 300px;
+    position:right;
+}
+
+.bigbox{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.textbox{
+    border:solid #352844 2px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin:30px;
+    padding:24px;
+}
+.constraint{
+    position: relative;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    padding: 70px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    margin-left:120px
+}
+
+.blinkingfloor {
+   font-size:30px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+span{
+    color:white;
+}
+.tab {
+    border:solid #352844 2px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin:30px;
+}
+
+.tab button {
+  font-family: 'Coda', sans-serif;
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #c5f0f5;
+}
+
+.tab button.active {
+  background-color: #584271;
+  color: #ffffff;
+}
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px solid #3a3a3a;
+  text-align: left;
+  padding: 8px;
+}
+
+.collapsible {
+  background-color: #c5f0f5;
+  cursor: pointer;
+  padding: 10px;
+  width: 635px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #475278;
+  color:white;
+}
+
+.content {
+  position:relative;
+  left:27px;
+  width: 599px;
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ddf5f9;
+}
+
+.faqtitle {
+    color:#001680;
+    font-size: 18px;
+}
+
+#com{
+    position:relative;
+    left:20px;
+}
+
+#madeby {
+    font-size: 10px;
+    color:#4b4b4b;
+    text-align:center;
+    align:center;
+}
+
+li{
+    text-align:left;
+    list-style-type: none;
+}
+
+.stampcat{
+    padding: 20px;
+}
+
+.chars{
+    text-align: center; 
+    border: none;
+}
+.just{
+    text-align:center;
+}
+
+a:link {
+  color: #63b9ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #854abd;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8fceff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: #ffe866ff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+i{
+    color:#3a3a3a;
+}
+
+#scroller{
+    display:none;
+}
+</style>
