@@ -29,7 +29,7 @@ html{
   }
 
 .clouds{
-  background-image: url("/images/bg.webp");
+  background-image: url("./images/bg.webp");
 background-attachment: fixed;
 animation: cloudscroll 22s linear infinite;
 background-repeat:repeat-x;
@@ -87,7 +87,7 @@ html::-webkit-scrollbar { /* WebKit */
 
 @font-face {
       font-family: 'browserlink';
-      src: url(/videotype/videotype-webfont.woff);
+      src: url(./videotype/videotype-webfont.woff);
 }
 
 ul li {
