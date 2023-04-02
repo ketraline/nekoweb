@@ -21,7 +21,7 @@ margin: 0px;
   top:0;
   right:0;
   height: 100vh;
-  background-color:hsla(360, 0%, 0%, 0.5);
+  background-color:hsla(360, 100%, 100%, 0.5);
   display: none;
   justify-content:center;
   align-items: center;
@@ -49,19 +49,6 @@ margin: 0px;
     margin-left:10px;
     height: 275px;
     float:right;
-    background-size: 100%;
-}
-
-.close {
-    cursor: pointer;
-    user-select: none;
-    background-image: url("./images/istockphoto-857112152-612x612.jpg");
-    width: 80px;
-    margin-left:10px;
-    height: 80px;
-    position: fixed;
-    top:10px;
-    right:10px;
     background-size: 100%;
 }
 
@@ -138,8 +125,8 @@ html::-webkit-scrollbar { /* WebKit */
 }
 
 ul li {
-  margin-left:-50px;
 list-style-position: inside;
+text-align:center;
 }
 
 .card{
