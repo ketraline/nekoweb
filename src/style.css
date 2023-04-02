@@ -56,7 +56,7 @@ margin: 0px;
 .close {
     cursor: pointer;
     user-select: none;
-    background-image: url("./images/istockphoto-857112152-612x612.jpg");
+    background-image: url("./images/close.png");
     width: 80px;
     margin-left:10px;
     height: 80px;
