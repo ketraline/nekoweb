@@ -6,8 +6,7 @@ background-size: 100% 800%;
 background-attachment:fixed;
 animation: gradient 15s ease infinite;
 padding: 0px;
-  margin: 0px;
-  height: 100vh;
+margin: 0px;
 }
 @keyframes gradient {
 0% {background-position: 0% 50%;}
@@ -21,8 +20,7 @@ padding: 0px;
   border-radius:20px;
   }
 
-  html, body{ min-height: 100vh;
-  min-width:100vh; margin:0}
+  html, body{min-width:100vh; margin:0}
 
 .col-3{
   margin:0;
