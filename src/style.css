@@ -14,13 +14,15 @@ margin: 0px;
 100% {background-position: 0% 50%;}
 }
 
+html{
+  margin:0;
+}
+
 .chars{
   text-align:center;
   border:none;
   border-radius:20px;
   }
-
-  html, body{min-width:100vh; margin:0}
 
 .col-3{
   margin:0;
