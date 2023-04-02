@@ -103,6 +103,10 @@ width:150px;
   width:200px;
 }
 
+marquee{
+  width:600px;
+}
+
 .tab a {
   font-family: 'browserlink', sans-serif;
   background-color: inherit;
