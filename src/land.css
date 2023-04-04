@@ -7,7 +7,7 @@ body{
   image-rendering:pixelated;
   background-position: center;
   height:100%;
-  overflow: hidden;
+  align: center;
 }
 
 html{
@@ -32,7 +32,7 @@ list-style-position: inside;
 }
 
 p{
-  font-size: 16px;
+  font-size: 20px;
   font-family: tahoma;
 }
 
@@ -48,12 +48,11 @@ p{
 }
 
 .darkener{
-
   background-color: hsla(259, 100%, 0%, 0.30);
   z-index: 8;
-  position: absolute;
+  position: fixed;
   align: center;
-  width: 200%;
+  width: 100%;
   display: block;
   height:100%;
 }
@@ -66,11 +65,9 @@ p{
 .constraint{
   position: relative;
   text-align: center;
-  min-width:890px;
-  width:95%;
-  max-width: 990px;
-  margin: 0;
-  padding: 50px;
+  width:980px;
+  padding:50px;
+  margin: auto;
 }
 
 @keyframes hover {
