@@ -48,7 +48,7 @@ p{
 }
 
 .darkener{
-  margin-top:-30px;
+
   background-color: hsla(259, 100%, 0%, 0.30);
   z-index: 8;
   position: absolute;
@@ -67,7 +67,7 @@ p{
   position: relative;
   text-align: center;
   width: 980px;
-  margin: auto;
+  margin: 0;
   padding: 50px;
 }
 
