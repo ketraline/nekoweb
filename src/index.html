@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="icon" type="image/x-icon" href="./index.ico" />
-    <link rel="stylesheet" href="./land.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <meta charset="utf-8"/>
     <title>Kibbi's Site!!</title>
@@ -10,12 +10,12 @@
   <body>
     <div class="darkener">
     </div>
-    <div class="taskbar"><img src="./images/start.png" style="float:left;"><img src="./images/time.png" style="float:right"></div>
+    <div class="taskbar"><img src="./main/images/start.png" style="float:left;"><img src="./main/images/time.png" style="float:right"></div>
     <div class="pagedoll" style="right: 10px;bottom: 10px">
-      <img src="./images/teyapagedoll.webp" style="height:300px">
+      <img src="./main/images/teyapagedoll.webp" style="height:300px">
     </div>
     <div class="pagedoll" style="left: 10px;bottom: 10px;">
-      <img src="./images/rodpagedoll.webp" style="height:300px;transform: scaleX(-1);">
+      <img src="./main/images/rodpagedoll.webp" style="height:300px;transform: scaleX(-1);">
     </div>
     <div class="constraint">
       <div class="window" style="width: 350px; z-index:10; position:absolute; top:80px; left:78px; animation:  4.51792s ease-in-out 0s infinite normal none running hover">
@@ -29,10 +29,10 @@
           </div>
           <div class="window-body">
             <div style="width:345px; background-color:#77a5d4; margin:-5px; margin-top:-10px">
-            <img src="./images/logo.webp" class="logo">
+            <img src="./main/images/logo.webp" class="logo">
           </div>
             <p>ketraline (C) Kibbi <br> Version: bigender.he/she.AuDHD <br> Made on April 8 in Poland <hr style="border: 2px solid #aba9a7;"> <p style="font-size:15px"> Welcome to my landing page! Here you'll find the basicest of basic information about me :) If you're curious to explore on your own, click the button below!</p>
-            <a href="./main.html" style="cursor:pointer"><button>OK</button></a>
+            <a href="./main/index.html" style="cursor:pointer"><button>OK</button></a>
           </div>
     </div>
     <div class="window" style="width: 500px; z-index:10; position:absolute; top:350px; left:523px; animation:  4.51792s ease-in-out 0s infinite normal none running hover">
@@ -47,10 +47,10 @@
         <div class="window-body">
           <section class="tabs" style="max-width: 500px">
   <menu role="tablist" aria-label="Sample Tabs">
-    <button role="tab" aria-selected="true" aria-controls="tab-A">Art</button>
-    <button role="tab" aria-controls="tab-B">Programming</button>
-    <button role="tab" aria-controls="tab-C">Video Editing</button>
-    <button role="tab" aria-controls="tab-D">Resources</button>
+    <a href="./index.html"><button role="tab" aria-selected="true" aria-controls="tab-A">Art</button></a>
+    <a href="./programming.html"><button role="tab" aria-controls="tab-B">Programming</button></a>
+    <a href="./editing.html"><button role="tab" aria-controls="tab-C">Video Editing</button></a>
+    <a href="./resources.html"><button role="tab" aria-controls="tab-D">Resources</button></a>
   </menu>
   <!-- the tab content -->
   <article role="tabpanel" id="tab-A">
@@ -58,23 +58,9 @@
     <p>
       2D artist, animator and graphic designer. Slowly learning 3D art as well. My main focus is character design, so most of my ideas are based around OCs! I don't have any big projects under my belt, but I've done quite a lot of commission work.
     </p>
-    <a href="./art/index.html" style="cursor:pointer"><button>Art Examples</button></a>
-    <a href="./art/commissions.html" style="cursor:pointer"><button>Commissions</button></a>
+    <a href="./main/art/index.html" style="cursor:pointer"><button>Art Examples</button></a>
+    <a href="./main/art/commissions.html" style="cursor:pointer"><button>Commissions</button></a>
     <a href="https://toyhou.se/ketraline/" style="cursor:pointer"><button>OCs</button></a>
-  </article>
-  <article role="tabpanel" hidden id="tab-B">
-    <h4>Programming</h4>
-    <p>I mostly work in HTML and CSS, but I also know Python and C++. Currently working on a python choose-your-own-adventure game, a similar text-based game in C++ and this website!</p>
-    <a href="https://toyhou.se/ketraline/" style="cursor:pointer"><button>OCs</button></a>
-  </article>
-  <article role="tabpanel" hidden id="tab-C">
-    <h4>Video Editing</h4>
-    <p>I often make videos or edits when I'm bored. 'Fluent' in After Effects and the Sapphire plugin, as well as puppet animation (which ties into my 2D skills).<br>Here's <a href="https://twitter.com/ketraline/status/1603463515754438656?s=20">one of the edits</a> I made and <a href="https://twitter.com/ketraline/status/1512507166980247554?s=20">an animation</a> made entirely in After Effects.</p>
-  </article>
-  <article role="tabpanel" hidden id="tab-D">
-    <h4>Resouces</h4>
-    <p>I hoard data and make (un)useful resources! Here you can find PSD templates, handheld console themes and more!</p>
-    <a href="./resources.html" style="cursor:pointer"><button>Resources</button></a>
   </article>
 </section>
         </div>
@@ -94,7 +80,7 @@
           <a href="https://steamcommunity.com/id/ketraline/"><img title="Steam" style="width:30px" src="http://orig05.deviantart.net/b1a0/f/2013/325/f/3/f3ffe4ffc1e0f977af7729fca92202b2-d6v0ju3.gif"></a>
           <a href="https://github.com/ketraline/"><img title="GitHub" style="width:30px" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56ddcf59-3cb4-4f3d-851e-91ec86e67871/df9xsq7-bf213b05-8c95-4b5e-a8aa-718d329ab707.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU2ZGRjZjU5LTNjYjQtNGYzZC04NTFlLTkxZWM4NmU2Nzg3MVwvZGY5eHNxNy1iZjIxM2IwNS04Yzk1LTRiNWUtYThhYS03MThkMzI5YWI3MDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JqWg86lcEsOoA6coTgFxHRob6hSMhHdbDbBeRpwpGww"></a>
           <br>
-          <a href="https://ketraline.neocities.org"><img src="./images/buttons/ketraline.webp"></a>
+          <a href="https://ketraline.neocities.org"><img src="./main/images/buttons/ketraline.webp"></a>
         </div>
   </div>
     <div class="window" style="width: 270px; z-index:3; position:absolute; top:20px; left:386px; animation: 7s infinite steps(1,end) shake;">
@@ -107,7 +93,7 @@
             </div>
         </div>
         <div class="window-body">
-          <img src="./images/passport.png" style="width:240px">
+          <img src="./main/images/passport.png" style="width:240px">
         </div>
   </div>
   <div class="window" style="width: 190px; z-index:4; position:absolute; top:338px; left:360px; animation: 7.2s infinite steps(1,end) shake;">
@@ -120,7 +106,7 @@
           </div>
       </div>
       <div class="window-body">
-        <img src="./images/gay.gif" style="width:175px">
+        <img src="./main/images/gay.gif" style="width:175px">
       </div>
 </div>
 <div class="window" style="width: 200px; z-index:5; position:absolute; top:520px; left:430px; animation: 8.9s infinite steps(1,end) shake;">
@@ -159,16 +145,16 @@
         </div>
     </div>
     <div class="window-body">
-      <img src="./images/real.png" style="width:450px">
+      <img src="./main/images/real.png" style="width:450px">
     </div>
 </div>
 <div class="window" style="width: 300px; z-index:10; position:absolute; top:264px; left:467px; animation:  4.51792s ease-in-out 0s infinite normal none running hover">
 <div class="window-body">
 <marquee style="margin-top:5px">
-  <a href="https://itzzen.net"><img src="./images/buttons/itzzen.webp"></a>
-  <img src="./images/buttons/queercoded.webp">
-  <img src="./images/buttons/transyourgender.webp">
-  <img src="./images/buttons/cssisawesome.webp">
+  <a href="https://itzzen.net"><img src="./main/images/buttons/itzzen.webp"></a>
+  <img src="./main/images/buttons/queercoded.webp">
+  <img src="./main/images/buttons/transyourgender.webp">
+  <img src="./main/images/buttons/cssisawesome.webp">
   <img src="https://imgur.com/rPQTyQp.png">
   <img src="https://imgur.com/viUbiWM.gif">
   <img src="https://imgur.com/bhuQxBu.png">
