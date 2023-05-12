@@ -1,3 +1,8 @@
+html{
+  margin: 0;
+  height:100%;
+}
+
 body{
   margin: 0 auto;
   background-image: url("./main/images/winxpbg.jpg");
@@ -10,30 +15,25 @@ body{
   align: center;
 }
 
-html{
-  margin: 0;
-  height:100%;
-}
-
-.pagedoll:hover{
-  animation:  1.7s ease-in-out 0s infinite normal none running hop;
-}
-
 ul li {
   margin-left:-50px;
-list-style-position: inside;
-}
-
-.pagedoll{
-  text-align:center;
-                max-width:30%;
-                position: fixed;
-                z-index:100;
+  list-style-position: inside;
 }
 
 p{
   font-size: 20px;
   font-family: tahoma;
+}
+
+.pagedoll{
+  text-align:center;
+  max-width:30%;
+  position: fixed;
+  z-index:100;
+}
+
+.pagedoll:hover{
+  animation:  1.7s ease-in-out 0s infinite normal none running hop;
 }
 
 .taskbar {

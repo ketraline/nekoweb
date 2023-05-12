@@ -20,6 +20,41 @@ margin: 0px;
   text-align:left;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: hsla(229, 18%, 0%, 0.8);
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .h4line:before{
   content:" ";
   height: 1px;
@@ -34,7 +69,7 @@ margin: 0px;
 }
 
 .flashbang{
-  z-index:2;
+  z-index:100;
   position:fixed;
   top:0;
   right:0;
