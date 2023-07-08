@@ -19,6 +19,13 @@ html{
   cursor: url("\images\Normal 1.cur"), auto !important;
 }
 
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 .h4line{
   position: relative;
   text-align:left;
@@ -339,17 +346,19 @@ a:active {
 
 #tab1:checked ~ section #tab1,
 #tab2:checked ~ section #tab2,
-#tab3:checked ~ section #tab3{
+#tab3:checked ~ section #tab3,
+#tab4:checked ~ section #tab4{
   display: block;
 }
 
-.tab1 .tab2 .tab3{
+.tab1 .tab2 .tab3 .tab4{
  background-color:#f6743d;
 }
 
 #tab1:checked ~ nav #tab1,
 #tab2:checked ~ nav #tab2,
-#tab3:checked ~ nav #tab3{
+#tab3:checked ~ nav #tab3,
+#tab4:checked ~ nav #tab4{
   label {
     position: relative;
     &:after {
