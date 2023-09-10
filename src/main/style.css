@@ -347,18 +347,20 @@ a:active {
 #tab1:checked ~ section #tab1,
 #tab2:checked ~ section #tab2,
 #tab3:checked ~ section #tab3,
-#tab4:checked ~ section #tab4{
+#tab4:checked ~ section #tab4,
+#tab5:checked ~ section #tab5{
   display: block;
 }
 
-.tab1 .tab2 .tab3 .tab4{
+.tab1 .tab2 .tab3 .tab4 .tab5{
  background-color:#f6743d;
 }
 
 #tab1:checked ~ nav #tab1,
 #tab2:checked ~ nav #tab2,
 #tab3:checked ~ nav #tab3,
-#tab4:checked ~ nav #tab4{
+#tab4:checked ~ nav #tab4,
+#tab5:checked ~ nav #tab5{
   label {
     position: relative;
     &:after {
