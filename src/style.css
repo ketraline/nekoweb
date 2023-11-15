@@ -9,7 +9,7 @@ body{
   background-size: 100% 100%;
   image-rendering:pixelated;
   height:100%;
-  align: center;
+  text-align:center;
 }
 
 ul li {
@@ -17,42 +17,38 @@ ul li {
   list-style-position: inside;
 }
 
-p{
-  font-size: 20px;
-  font-family: tahoma;
+@font-face {
+  font-family: 'leviwindows';
+  src: url('./res/fonts/leviwindows/leviwindows.ttf');
 }
 
+p{
+  font-size: 22px;
+  font-family: leviwindows;
+}
+.folder{
+  background: url('./res/98/98foldermiddle.png') repeat-y;
+  position:relative;
+  margin:auto;
+  width:542px;
+  height:400px;
+}
 
 .pagedoll{
   text-align:center;
-  max-width:30%;
+  max-width:20%;
   position: fixed;
   z-index:100;
-}
-
-.pagedoll:hover{
-  animation:  1.7s ease-in-out 0s infinite normal none running hop;
+  animation: 2s infinite steps(1,end) shake;
 }
 
 .taskbar {
   width: 100%;
-  height: 28px;
-  background-image: url("./main/images/98taskbar.png");
-  background-repeat: repeat-x;
+  max-height: 52px;
+  background: url("./main/images/98taskbar.png") 100% repeat-x;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 0px;
   z-index: 5;
-}
-
-.darkener{
-  background-color: hsla(259, 100%, 0%, 0.30);
-  z-index: 8;
-  position: fixed;
-  align: center;
-  width: 100%;
-  display: block;
-  height:100%;
 }
 
 .logo{
@@ -77,42 +73,6 @@ p{
 }
 100% {
   transform: translate(0px, 3px);
-}
-}
-
-@keyframes hop {
-  0% {
-  transform: translate(0px, 0px);
-}
-10% {
-  transform: translate(5px, -7px);
-}
-20%{
-  transform: translate(10px, 0px);
-}
-30% {
-  transform: translate(15px, -7px);
-}
-40%{
-  transform: translate(20px, 0px);
-}
-50%{
-  transform: translate(20px, 0px);
-}
-60%{
-  transform: translate(15px, -7px);
-}
-70%{
-  transform: translate(10px, 0px);
-}
-80% {
-  transform: translate(5px, -7px);
-}
-90%{
-  transform: translate(0px, 0px);
-}
-100% {
-  transform: translate(0px, 0px);
 }
 }
 
