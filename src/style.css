@@ -3,6 +3,11 @@ html{
   height:100%;
 }
 
+.icon:hover{
+  border:2px dashed gray;
+  margin:-2px
+}
+
 body{
   margin: 0 auto;
   background-color: #008080;
@@ -35,9 +40,10 @@ p{
 }
 
 .pagedoll{
-  text-align:center;
-  max-width:20%;
+  right: 20px;
+  bottom: 30px;
   position: fixed;
+  max-width:30%;
   z-index:100;
   animation: 2s infinite steps(1,end) shake;
 }
