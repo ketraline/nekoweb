@@ -40,9 +40,9 @@ p{
 }
 
 .pagedoll{
+  position: fixed;
   right: 20px;
   bottom: 28px;
-  position: fixed;
   max-width:30%;
   z-index:100;
   animation: 2s infinite steps(1,end) shake;
