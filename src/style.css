@@ -1,15 +1,13 @@
 html{
   margin: 0;
+  padding: 0;
   height:100%;
-}
-
-.icon:hover{
-  border:2px dashed gray;
-  margin:-2px
+  min-width:930px;
 }
 
 body{
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   background-color: #008080;
   background-size: 100% 100%;
   image-rendering:pixelated;
@@ -17,6 +15,25 @@ body{
   text-align:center;
 }
 
+@media only screen and (max-width: 1100px) {
+  #fade {
+      display: none;
+  }
+}
+
+.constraint {
+  max-width: 1000px;
+  min-width: 730px;
+  width: 90%;
+  text-align:center;
+  margin: auto;
+  padding: 50px;
+}
+
+.icon:hover{
+  border:2px dashed gray;
+  margin:-2px
+}
 ul li {
   margin-left:-50px;
   list-style-position: inside;
@@ -41,10 +58,11 @@ p{
 
 .pagedoll{
   position: fixed;
-  right: 20px;
-  bottom: 28px;
-  max-width:30%;
-  z-index:100;
+  right: 10px;
+  bottom: 20px;
+  width:30%;
+  max-width:600px;
+  min-width:400px;
   animation: 2s infinite steps(1,end) shake;
 }
 
@@ -60,14 +78,6 @@ p{
 .logo{
   width:300px;
   animation: 2s infinite steps(1,end) shake;
-}
-
-.constraint{
-  position: relative;
-  text-align: center;
-  width:980px;
-  padding:50px;
-  margin: auto;
 }
 
 @keyframes hover {

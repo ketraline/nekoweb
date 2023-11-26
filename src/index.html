@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/x-icon" href="./index.ico">
+    <link rel="icon" type="image/x-icon" href="./res/wheatly.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="me">
@@ -26,9 +26,7 @@
         <img src="./main/images/98start.png" style="float:left"><img src="./main/images/98time.png" style="float:right">
     </div>
 
-    <!-- PAGEDOLLS -->
-    <img src=".\res\artwork\pagedoll\wheatly.webp" class="pagedoll">
-
+    <!-- ICONS ON THE LEFT -->
     <div style="float:left;margin:15px">
         <div>
             <img src=".\res\98\recyclebin.png">
@@ -43,75 +41,86 @@
             <p style="font-size:14px;color:white">Computer</p>
         </div>
     </div>
-    <!-- ABOUT ME -->
-    <div class="window"
-        style="width: 350px; z-index:7;position:absolute; top:10%; left:25%; animation: 3.21792s ease-in-out 0s infinite normal none running hover">
-        <div class="title-bar">
-            <div class="title-bar-text" style="font-size:25px">About ketraline</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+
+    <!-- PAGEDOLL -->
+    <img id="fade" src=".\res\artwork\pagedoll\wheatly.webp" class="pagedoll">
+
+    <!-- WINDOWS -->
+    <center style="overflow: hidden;">
+        <div style="width:700px;height:650px;transform: translate(-2px,10px)">
+            <!-- ABOUT ME -->
+            <div class="window" style="position:relative;top:60px;right:220px;width:350px; z-index:7;animation: 3.21792s ease-in-out 0s infinite normal none running hover">
+                <div class="title-bar">
+                    <div class="title-bar-text" style="font-size:25px">About ketraline</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <img src="./main/../res/logo.png" class="logo" style="width:70%">
+                    <p style="margin-top:0px">Trademark ™ 2021-2023<br>Version: bigender.he/she.AuDHD<br>Made on April 8
+                        in
+                        Poland
+                    </p>
+                </div>
+            </div>
+
+            <!-- WEBSITE LINKS -->
+            <div style="position:relative;bottom:90px;animation: 5.21792s ease-in-out 0s infinite normal none running hover">
+                <div class="folder">
+                    <img src=".\res\98\98foldertop.png" style="position: absolute;left:0;top: 0">
+                    <a href=".\main\index.html">
+                        <div style="position:absolute;left:250px;top:150px">
+                            <img src=".\res\98\globe.png">
+                            <p style="font-size:14px">Homepage</p>
+                        </div>
+                    </a>
+                    <a href=".\main\art\index.html">
+                        <div style="position:absolute;left:400px;top:150px">
+                            <img src=".\res\98\paint.png">
+                            <p style="font-size:14px">Artwork</p>
+                        </div>
+                    </a>
+                    <a href=".\main\resources\index.html">
+                        <div style="position:absolute;left:250px;top:260px">
+                            <img src=".\res\98\camera.png">
+                            <p style="font-size:14px">Resources</p>
+                        </div>
+                    </a>
+                    <img src=".\res\98\98folderbottom.png" style="position: absolute;left:0;bottom: 0;">
+                </div>
+            </div>
+
+            <!-- OFFSITE LINKS -->
+            <div class="window"
+                style="position:relative;bottom:140px;left:250px;width: 200px; z-index:7; animation: 4.51792s ease-in-out 0s infinite normal none running hover">
+                <div class="title-bar">
+                    <div class="title-bar-text" style="font-size:25px">Links</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Minimize"></button>
+                        <button aria-label="Maximize"></button>
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <a href="https://twitter.com/ketraline/"><img title="Twitter" style="width:30px"
+                            src="./res/98/twitter.png"></a>
+                    <a href="https://toyhou.se/ketraline"><img title="Toyhou.se" style="width:30px"
+                            src="./res/98/toyhouse.png"></a>
+                    <a href="https://steamcommunity.com/id/ketraline/"><img title="Steam" style="width:30px"
+                            src="./res/98/steam.png"></a>
+                    <a href="https://github.com/ketraline/"><img title="GitHub" style="width:30px"
+                            src="./res/98/github.png"></a>
+                    <a href="https://www.tumblr.com/blog/ketrapilled/"><img title="Tumblr" style="width:30px"
+                            src="./res/98/tumblr.png"></a>
+                    <br>
+                    <a href="https://ketraline.neocities.org"><img src="./main/images/buttons/ketraline.webp"></a>
+                </div>
             </div>
         </div>
-        <div class="window-body">
-            <img src="./main/images/logo.webp" class="logo" style="width:70%">
-            <p style="margin-top:0px">Trademark ™ 2021-2023<br>Version: bigender.he/she.AuDHD<br>Made on April 8 in
-                Poland
-            </p>
-        </div>
-    </div>
-
-    <!-- LINKS -->
-    <div class="window"
-        style="width: 200px; z-index:7; position:absolute; top:70%; left:58%; animation: 4.51792s ease-in-out 0s infinite normal none running hover">
-        <div class="title-bar">
-            <div class="title-bar-text" style="font-size:25px">Links</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <a href="https://twitter.com/ketraline/"><img title="Twitter" style="width:30px"
-                    src="http://orig06.deviantart.net/eb00/f/2015/212/4/a/4ad3357e4a286b14ed9ce2e9dca1b977-d93k9ec.png"></a>
-            <a href="https://www.reddit.com/user/ketraline"><img title="Reddit" style="width:30px"
-                    src="http://orig07.deviantart.net/025f/f/2015/212/b/9/reddit_icon_by_poserfan-d57fr1j.gif"></a>
-            <a href="https://steamcommunity.com/id/ketraline/"><img title="Steam" style="width:30px"
-                    src="http://orig05.deviantart.net/b1a0/f/2013/325/f/3/f3ffe4ffc1e0f977af7729fca92202b2-d6v0ju3.gif"></a>
-            <a href="https://github.com/ketraline/"><img title="GitHub" style="width:30px"
-                    src="https://thumbs2.imgbox.com/41/db/zMqIgRg9_t.png"></a>
-            <br>
-            <a href="https://ketraline.neocities.org"><img src="./main/images/buttons/ketraline.webp"></a>
-        </div>
-    </div>
-    <div
-        style="width:100%;position:absolute;top:28%; animation: 5.21792s ease-in-out 0s infinite normal none running hover">
-        <div class="folder">
-            <img src=".\res\98\98foldertop.png" style="position: absolute;left:0;top: 0">
-            <a href=".\main\index.html">
-                <div style="position:absolute;left:250px;top:150px">
-                    <img src=".\res\98\globe.png">
-                    <p style="font-size:14px">Homepage</p>
-                </div>
-            </a>
-            <a href=".\main\art\index.html">
-                <div style="position:absolute;left:400px;top:150px">
-                    <img src=".\res\98\paint.png">
-                    <p style="font-size:14px">Artwork</p>
-                </div>
-            </a>
-            <a href=".\main\resources\index.html">
-                <div style="position:absolute;left:250px;top:260px">
-                    <img src=".\res\98\camera.png">
-                    <p style="font-size:14px">Resources</p>
-                </div>
-            </a>
-            <img src=".\res\98\98folderbottom.png" style="position: absolute;left:0;bottom: 0;">
-        </div>
-    </div>
-
+    </center>
 </body>
 
 </html>

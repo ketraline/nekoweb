@@ -1,13 +1,28 @@
-body {
+html {
   font-family: 'browserlink', sans-serif;
   color: #ffffff;
-  background: linear-gradient(0deg, #7d00ff, #e800c7, #ff005e, #ff5437, #ffa800, #ff5437, #ff005e, #e800c7, #7d00ff);
+  background: linear-gradient(0deg, #3a00ac, #f200e1, #ff2f58, #ff6d36, #ffae00, #ff6d36, #ff2f58, #f200e1, #3a00ac);
   background-size: 100% 800%;
   background-attachment: fixed;
   animation: gradient 15s ease infinite;
-  padding: 0px;
-  height: 100vh;
+  padding: 0;
   margin: 0px;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;  
+  scrollbar-color: #ff4579 #3d009c;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+body {
+  background: url("./../res/bg.png") repeat fixed center;
+  animation: bgscroll 22s linear infinite;
+  padding: 0;
+  margin:0;
+  min-height: 100%;
+  width: 100%;
 }
 
 @keyframes gradient {
@@ -21,6 +36,16 @@ body {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes bgscroll {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 475px 475px;
   }
 }
 
@@ -85,58 +110,6 @@ details>summary::-webkit-details-marker {
   right: 10%;
 }
 
-.flashbang {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(360, 0%, 0%, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.flashbang img {
-  max-width: 90%;
-  max-height: 80%;
-  min-width: 0%;
-}
-
-.imageopener input[type=checkbox] {
-  display: none;
-}
-
-.imageopener input[type=checkbox]:checked~.flashbang {
-  display: flex;
-}
-
-/* DONT FUCK WITH THIS - HTML HATES YOU */
-.imageopener .zoomin {
-  cursor: pointer;
-  user-select: none;
-  background-image: url("./images/artwork/teyaref.webp");
-  width: 200px;
-  height: 365px;
-  margin-left: 10px;
-  float: right;
-  background-size: 100%;
-}
-
-.close {
-  cursor: pointer;
-  user-select: none;
-  background-image: url("./images/close.webp");
-  width: 80px;
-  margin-left: 10px;
-  height: 80px;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-size: 100%;
-}
-
 .chars {
   text-align: center;
   border: none;
@@ -145,26 +118,6 @@ details>summary::-webkit-details-marker {
 
 .col-3 {
   margin: 0;
-}
-
-.clouds {
-  background-image: url("./images/bg.webp");
-  background-attachment: fixed;
-  animation: cloudscroll 22s linear infinite;
-  background-repeat: repeat-x;
-  padding: 8px;
-  text-align: center;
-  flex: 3;
-}
-
-@keyframes cloudscroll {
-  0% {
-    background-position: 0px 0px;
-  }
-
-  100% {
-    background-position: 760px 0px;
-  }
 }
 
 .pagedoll {
@@ -193,20 +146,6 @@ details>summary::-webkit-details-marker {
 
 .toslist {
   text-align: justify;
-}
-
-html {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */
-}
-
-html::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0;
 }
 
 @font-face {
@@ -238,6 +177,19 @@ ul li {
   border-radius: 5px;
 }
 
+.qrcode {
+  margin:auto;
+  display: none;
+}
+
+.theme:hover + .qrcode {
+  display: block;
+}
+
+.qrcode:hover{
+  display: block;
+}
+
 .tab a:hover {
   background-color: hsla(334, 76%, 19%, 0.57);
 }
@@ -267,9 +219,8 @@ ul li {
   }
 }
 
-h3,
-h4 {
-  color: #ffd675;
+h3,h4 {
+  color: rgb(246, 255, 117);
 }
 
 .bigbox {
@@ -280,7 +231,7 @@ h4 {
 
 .textbox {
   overflow: hidden;
-  background-color: HSLA(318, 73%, 22%, 0.4);
+  background-color: HSLA(318, 73%, 22%, 0.6);
   border-radius: 25px;
   margin: 10px;
   padding: 30px;
@@ -288,19 +239,18 @@ h4 {
 
 .ptcgnavbar {
   overflow: hidden;
-  background-color: HSLA(318, 73%, 22%, 0.4);
+  background-color: HSLA(318, 73%, 22%, 0.6);
   border-radius: 25px;
-  padding: 24px;
-  margin: 10px;
-  width: 200px;
+  padding: 14px;
+  width: 250px;
   position: sticky;
-  top: 30px;
+  top: 10px;
   display: inline-block;
 }
 
 .ptcgcontent {
   overflow: hidden;
-  background-color: HSLA(318, 73%, 22%, 0.4);
+  background-color: HSLA(318, 73%, 22%, 0.6);
   border-radius: 25px;
   padding: 24px;
   max-width: 800px;
@@ -311,12 +261,85 @@ h4 {
   display: inline-block;
 }
 
+.lightbox-target {
+  position: fixed;
+  z-index: 800;
+  width: 100%;
+  background: rgba(51, 19, 19, 0.7);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.lightbox-target h3 {
+  position: relative;
+  display: inline;
+}
+
+a.lightbox-close {
+  background-image: url("./images/close.png");
+  width: 80px;
+  margin: 10px;
+  height: 80px;
+  position: absolute;
+  top: -80px;
+  right: 5px;
+  background-size: 100%;
+}
+
+a.lightbox-left {
+  background-image: url("./images/arrowleft.png");
+  width: 80px;
+  margin: 10px;
+  height: 80px;
+  position: absolute;
+  top: 45%;
+  left: 5px;
+  background-size: 100%;
+}
+
+a.lightbox-right {
+  background-image: url("./images/arrowright.png");
+  width: 80px;
+  margin: 10px;
+  height: 80px;
+  position: absolute;
+  top: 45%;
+  right: 5px;
+  background-size: 100%;
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lightbox-target:target img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.lightbox-target:target a.lightbox-close {
+  top: 0;
+}
+
 .ptcgconstraint {
   position: relative;
   text-align: center;
   width: 1200px;
   margin: auto;
-  padding: 50px;
+  padding: 25px;
 }
 
 .ptcgicon {
@@ -330,32 +353,30 @@ h4 {
   min-width: 730px;
   width: 90%;
   margin: auto;
-  padding: 50px;
+  padding: 25px;
 }
 
 .artimgs {
-  height: 30vw;
-  max-height: 300px;
-  min-height: 250px;
+  max-height: 350px;
   border: 3px white solid;
   border-radius: 3px;
 }
 
 a:link,
 a:visited {
-  color: #f7dfa6;
+  color: rgb(255, 218, 97);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e6b37a;
+  color: #ff8800;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
-  color: #faf9d4;
+  color: rgb(255, 218, 97);
   background-color: transparent;
   text-decoration: none;
 }
@@ -399,10 +420,8 @@ a:active {
 }
 
 .arttab {
-  width: 80px;
-  height: 30px;
   border: none;
-  padding: 20px;
+  margin:20px;
   background-color: hsla(334, 76%, 19%);
   border-radius: 5px;
 }
@@ -416,4 +435,16 @@ a:active {
   padding-bottom: 5px;
   background-color: hsla(334, 76%, 19%);
   border-radius: 5px;
+}
+
+@keyframes hover {
+  0% {
+  transform: translate(0px, 3px);
+}
+50% {
+  transform: translate(0px, -3px);
+}
+100% {
+  transform: translate(0px, 3px);
+}
 }
