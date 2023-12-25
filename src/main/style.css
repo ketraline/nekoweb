@@ -350,7 +350,7 @@ a.lightbox-right {
   position: relative;
   text-align: center;
   max-width: 1000px;
-  min-width: 730px;
+  min-width: 850px;
   width: 90%;
   margin: auto;
   padding: 25px;
@@ -358,6 +358,7 @@ a.lightbox-right {
 
 .artimgs {
   max-height: 350px;
+  max-width:240px;
   border: 3px white solid;
   border-radius: 3px;
 }
@@ -417,6 +418,37 @@ a:active {
       bottom: -1px;
     }
   }
+}
+
+.collection{
+  height: 325px;
+  margin:5px;
+  overflow:hidden;
+}
+
+.collection:hover{
+  height:auto;
+  background-color: #3900ac75;
+  border-radius: 5px;
+}
+
+#summary:hover + #detail, #detail:hover {
+  display: block;
+}
+#detail {
+  display: none;
+}
+
+.resources{
+  height: 260px;
+  margin:5px;
+  overflow:hidden;
+}
+
+.resources:hover{
+  height:auto;
+  background-color: #3900ac75;
+  border-radius: 5px;
 }
 
 .arttab {
