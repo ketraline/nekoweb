@@ -1,0 +1,130 @@
+html{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    min-width:930px;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #008080;
+    background-size: 100% 100%;
+    image-rendering:pixelated;
+    height:100%;
+    text-align:center;
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    #fade {
+        display: none;
+    }
+  }
+  
+  .constraint {
+    max-width: 1000px;
+    min-width: 730px;
+    width: 90%;
+    text-align:center;
+    margin: auto;
+    padding: 50px;
+  }
+  
+  .icon:hover{
+    border:2px dashed gray;
+    margin:-2px
+  }
+  ul li {
+    margin-left:-50px;
+    list-style-position: inside;
+  }
+  
+  @font-face {
+    font-family: 'leviwindows';
+    src: url('res/fonts/leviwindows/leviwindows.ttf');
+  }
+  
+  p{
+    font-size: 22px;
+    font-family: leviwindows;
+  }
+  .folder{
+    background: url('res/landing/98foldermiddle.png') repeat-y;
+    position:relative;
+    margin:auto;
+    width:542px;
+    height:400px;
+  }
+  
+  .pagedoll{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    width:30%;
+    max-width:600px;
+    min-width:400px;
+    animation: 2s infinite steps(1,end) shake;
+  }
+  
+  .taskbar {
+    width: 100%;
+    max-height: 52px;
+    background: url("res/landing/98taskbar.png") 100% repeat-x;
+    position: fixed;
+    bottom: 0px;
+    z-index: 5;
+  }
+  
+  .logo{
+    width:300px;
+    animation: 2s infinite steps(1,end) shake;
+  }
+  
+  @keyframes hover {
+    0% {
+    transform: translate(0px, 3px);
+  }
+  50% {
+    transform: translate(0px, -3px);
+  }
+  100% {
+    transform: translate(0px, 3px);
+  }
+  }
+  
+  @keyframes shake {
+    0% {
+    transform: skew(-0.1deg) translate(0px, 0px) scalex(1) scaley(1.005);
+  }
+  8% {
+    transform: skew(0.2deg) translate(0.4px, 0px) scalex(1) scaley(1);
+  }
+  18% {
+    transform: skew(0deg) translate(0px, 0.2px) scalex(1.004) scaley(1);
+  }
+  30% {
+    transform: skew(-0.34deg) translate(0px, 0px) scalex(1.007) scaley(1);
+  }
+  38% {
+    transform: skew(0deg) translate(-0.5px, 0px) scalex(1) scaley(1);
+  }
+  48% {
+    transform: skew(0.22deg) translate(0.3px, 0px) scalex(1) scaley(1.003);
+  }
+  54% {
+    transform: skew(-0.35deg) translate(0px, 0px) scalex(1.0033) scaley(1);
+  }
+  60% {
+    transform: skew(0.2deg) translate(0px, 0.6px) scalex(1.002) scaley(1);
+  }
+  74% {
+    transform: skew(0deg) translate(0px, 0px) scalex(1.0) scaley(1);
+  }
+  88% {
+    transform: skew(0deg) translate(-0.05px, 0.2px) scalex(1.001) scaley(1);
+  }
+  100% {
+    transform: skew(-0.1deg) translate(0px, 0.3px) scalex(1.0022) scaley(1.005);
+  }
+  }
+  

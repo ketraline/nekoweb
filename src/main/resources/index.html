@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="icon" type="image/x-icon" href="./../../res/wheatly.ico">
-  <link rel="stylesheet" href="./../style.css">
+  <link rel="icon" type="image/x-icon" href="../../res/global/wheatly.ico">
+  <link rel="stylesheet" href="../style.css">
   <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=200">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kibbi's Site</title>
 
   <!-- EMBED TAGS-->
   <meta content="website" property="og:type">
-  <meta content="Kibbi's Resources" property="og:site_name">
-  <meta content="Resource Index" property="og:title">
-  <meta content="An index of all of the resources I've created over the years." property="og:description">
+  <meta content="Kibbi's Site" property="og:site_name">
+  <meta content="Resources" property="og:title">
+  <meta content="A list of all of the resources I made that are available to the public." property="og:description">
   <meta content="https://f2.toyhou.se/file/f2-toyhou-se/images/72400583_4xtURbQ7z2t9lad.png" property="og:image">
   <meta property="og:image:width" content="1280">
   <meta name="twitter:card" content="summary_large_image">
@@ -19,72 +20,53 @@
 </head>
 
 <body>
-  <div class="bigbox">
-
-    <!-- PAGEDOLL -->
-    <div class="pagedoll">
-      <img src="./../images/teyapagedoll.webp" style="height:300px">
-    </div>
-
-    
-      <div class="constraint">
-        <img src="./../../res/logo.png" style="animation: 6.36247s ease-in-out 0s infinite hover">
-        <br>
-        
-        <div class="textbox">
-
-          <!-- TABS -->
-          <div class="tab">
-            <a class="tablinks" href="./../index.html">About</a>
-            <a class="tablinks" href="./../art/index.html">Art</a>
-            <a class="tablinks" href="./../gaming.html">Gaming</a>
-            <a class="tablinks" href="./../collections/arknights.html">Collections</a>
-            <a class="tablinks" style="background-color:hsla(334, 76%, 19%, 0.57)"href="./index.html">Resources</a>
-            <a class="tablinks" href="./../blog/index.html">Blog</a>
-            |
-            <a class="tablinks" href="./../sitemap.html">Sitemap</a>
+  <input type="checkbox" hidden id="barmove" />
+  <label class="sidebar" for="barmove">
+    <img src="../../res/global/logo.png" id="logo">
+    <img src="../../res/sidebar/click.png" id="click">
+    <div class="sidetext">
+      <p>Click on the + to open menus!</p>
+      <div style="padding:10px"><a href="../index.html"><img src="../../res/sidebar/mainbutton.png"></a></div>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="../art/index.html"><img src="../../res/sidebar/artbutton.png"></a></div>
+        </summary>
+        <ul>
+          <li><a href="../art/index.html">My Art</a></li>
+          <li><a href="../art/commissions.html">Commissions</a></li>
+          <li><a href="../tos.html#art">TOS</a></li>
+        </ul>
+      </details>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="../projects/index.html"><img
+                src="../../res/sidebar/projectsbutton.png"></a>
           </div>
-
-          <!-- TEXTBOX -->
-          <div id="Resources" class="tabcontent">
-            <a class="arttab" href="./index.html">PSD Templates/Bases</a>
-            <a class="arttab" href="./3dscustomization.html">3DS Customization</a>
-            <a class="arttab" href="./siteresources.html">Profile & Site Resources</a>
-            <a class="arttab" href="./toyhousecodes.html">Toyhou.se Codes</a>
-            <a class="arttab" href="./usefulsites.html">Useful Sites</a>
-                  <h3>Limbus Company Mugshot Template</h3>
-                  <img
-                    src="https://media.discordapp.net/attachments/736934815378702347/1092403282363826267/Ketraline-MugshotTemplate_1.png"
-                    class="artimgs">
-                  <img
-                    src="https://media.discordapp.net/attachments/736934815378702347/1092403282695172096/Ketraline-MugshotTemplate.png"
-                    class="artimgs">
-                  <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/63219919_9TIWYfyXtU5tZwV.png" class="artimgs">
-                  <p>A free-to-use PSD template for a mugshot image in the style of Limbus Company. Only thing you need
-                    is a transparent image of your character! Comes with fonts used in case you want to customize the
-                    template even more!
-                    <br><br><a href="https://www.mediafire.com/file/xtmj6f3gwsdl5br/Ketraline-MugshotTemplate.zip">
-                      Download Here </a>
-                
-          </div>
-        </div>
-
-        <!-- JOHNVERTISEMENT -->
-        <div>
-          <iframe src="https://john.citrons.xyz/embed?ref=ketraline.neocities.org"
-            style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
-        </div>
-
-        <!-- STAMPS -->
-        <div>
-          <a href="https://itzzen.net/"><img src="./../images/buttons/itzzen.webp"></a>
-          <a href="https://ketraline.neocities.org/"><img src="./../images/buttons/ketraline.webp"></a>
-          <img src="./../images/buttons/queercoded.webp">
-          <img src="./../images/buttons/cssisawesome.webp">
-          <img src="./../images/buttons/transyourgender.webp">
-        </div>
-
+        </summary>
+        <ul>
+          <li><a href="website/index.html">This Website</a></li>
+        </ul>
+      </details>
+      <div style="padding:10px"><a href="index.html"><img src="../../res/sidebar/resourcesbutton.png"></a>
       </div>
+      <div style="padding:10px"><a href="../blog/index.html"><img src="../../res/sidebar/blogbutton.png"></a></div>
+      <div style="padding:10px"><a href="../sitemap.html"><img src="../../res/sidebar/sitemapbutton.png"></a></div>
+    </div>
+    <img src="../../res/sidebar/bgr.png" id="sidebg">
+  </label>
+  <div class="darkener"></div>
+
+  <!-- MAIN BODY -->
+  <div class="constraint">
+    <div class="textbox">
+      <h1>resources</h1>
+      <p>A list of all of the free to use resources I've made. Better interface coming soon.</p>
+      <ul>
+        <li><a href="psdtemplates.html">PSD Templates</a></li>
+        <li><a href="thcodes.html">Toyhou.se Codes</a></li>
+        <li><a href="3dscustomization.html">3DS Customization</a></li>
+        <li><a href="siteresources.html">Site Resources</a></li>
+      </ul>
     </div>
   </div>
 

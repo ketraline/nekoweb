@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="res/hoshiicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda&family=Orbitron&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kibbi's Site!! </title>
+    <style>
+        h1,
+        h3,
+        h4 {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        body {
+            font-family: 'Coda', sans-serif;
+            color: #272727;
+            font-size: 16px;
+            background: linear-gradient(0deg, #493269, #813d59, #cb5867, #e08572, #e6b646, #e08572, #cb5867, #813d59, #493269);
+            background-size: 100% 800%;
+            background-attachment: fixed;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #hoberlogo {
+            position: absolute;
+            top: 1px;
+            right: 200px;
+            width: 200px;
+        }
+
+        .bigbox {
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+        }
+
+        .textbox {
+            border: solid #352844 2px;
+            overflow: hidden;
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin: 30px;
+            padding: 24px;
+        }
+
+        .constraint {
+            position: relative;
+            text-align: center;
+            width: 800px;
+            margin: auto;
+            padding: 70px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin-left: 120px
+        }
+
+        .blinkingfloor {
+            font-size: 30px;
+            -webkit-animation: 1s blink step-end infinite;
+            -moz-animation: 1s blink step-end infinite;
+            -ms-animation: 1s blink step-end infinite;
+            -o-animation: 1s blink step-end infinite;
+            animation: 1s blink step-end infinite;
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: black;
+            }
+        }
+
+        span {
+            color: white;
+        }
+
+        .tab {
+            border: solid #352844 2px;
+            overflow: hidden;
+            background-color: #ffffff;
+            border-radius: 25px;
+            margin: 30px;
+        }
+
+        .tab button {
+            font-family: 'Coda', sans-serif;
+            background-color: inherit;
+            float: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #c5f0f5;
+        }
+
+        .tab button.active {
+            background-color: #584271;
+            color: #ffffff;
+        }
+
+        #madeby {
+            font-size: 10px;
+            color: #4b4b4b;
+            text-align: center;
+            text-align: center;
+        }
+
+        li {
+            text-align: left;
+            list-style-type: none;
+        }
+
+        .stampcat {
+            padding: 20px;
+        }
+
+        a:link {
+            color: #63b9ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #854abd;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #8fceff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: #ffe866ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="constraint">
+            <!-- title box -->
+            <img id="hoberlogo" src="res/hoshihalf.png">
+            <div class="textbox">
+                <div class="row">
+                    <h1 class="col-3"> >ketraline </h1>
+                    <span class="col-3 blinkingfloor">_</span>
+                </div>
+            </div>
+            <!-- tabs -->
+            <div class="tab">
+                <button class="tablinks" id="open">Home</button>
+                <button class="tablinks">Art</button>
+                <button class="tablinks">Gaming</button>
+                <button class="tablinks">Links</button>
+            </div>
+            <!-- main textbox -->
+            <div class="textbox">
+                <!-- home tab -->
+                <div id="Home" class="tabcontent">
+                    <p> Hello, I'm Kibbi! Welcome to my website. This is where I store all random things that might be
+                        useful. I hope you find something of interest here. I'm not special in any way and probably
+                        don't deserve a wholeass website about me, but what are you gonna do about it?
+                    <h3>Who am I?</h3>
+                    <a style="float:left; padding:10px">
+                        <img src="res/pl.png" alt="A stamp of the Polish flag">
+                    </a>
+                    <a style="float:left; padding:10px">
+                        <img src="res/bi.png" alt="A stamp of the bigender flag">
+                    </a>
+                    <p style="text-align: left">Well, besides Kibbi, I also go by Rod. I was
+                        unfortunately born in Poland on April 8th. I am a part of the LGBT, yippee! I'm an artist,
+                        gamer, huge data hoarder and a friend to everyone :) </p>
+                    <h3>Who's that character on the top?</h3>
+                    <a style="float:right; padding:10px" href="https://toyhou.se/18946817.hoshi">
+                        <img style="width:200px" src="res/hoshihead.png" alt="A stamp of the Polish flag">
+                    </a>
+                    <p style="text-align:left"> That's my mascot! Also known as Hoshi. Shocker, huh? She's a scrimblo
+                        bimblo gremlin idiot and I draw her too much. She also has a slime form (Slimeshi), since she
+                        was originally a slime person thing. Hoshi herself is now a shapeshifter of sorts, while
+                        Slimeshi is a separate character that actually looks like a slime. <br> Wow, take a shot
+                        everytime you read the word slime lmao <br><br> The image links to her ToyHouse page if you
+                        wanna see more of her.</p>
+                    <h3>Random facts</h3>
+                    <ul>
+                        <li>➤ I collect soda cans and I'm addicted to Coca Cola </li>
+                        <li>➤ I've been coding since I was 10! Started with Scratch, then moved on to HTML/CSS, Python
+                            and now I'm learning C++. I only remember HTML and C++ though.</li>
+                        <li>➤ Speaking of languages, I speak Polish and English. I also know a large portion of Spanish
+                            and I'm currently learning German. </li>
+                    </ul>
+                    <div class="stampcat">
+                        <p>heres some weird stamps i found on deviantArt</p>
+                        <a style="padding:10px">
+                            <img src="res/stewie.gif" alt="Stevie Griffin stamp">
+                        </a>
+                        <a style="padding:10px">
+                            <img src="res/alphaomega.png" alt="'Alpha & Omega fan' stamp">
+                        </a>
+                        <a style="padding:10px">
+                            <img src="res/straightppl.png" alt="Stamp that says 'straight people dont exist'">
+                        </a>
+                        <a style="padding:10px">
+                            <img src="res/bubonicpride.png" alt="Bubonic pride stamp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p id="madeby"> All art has been made by me. Coded on Replit, 2022.</p>
+        </div>
+    </div>
+</body>
+
+</html>

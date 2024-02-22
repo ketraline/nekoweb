@@ -1,17 +1,18 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-  <link rel="icon" type="image/x-icon" href="./../../res/wheatly.ico">
+  <link rel="icon" type="image/x-icon" href="./../../res/global/wheatly.ico">
   <link rel="stylesheet" href="./../style.css">
   <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=200">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kibbi's Site</title>
 
   <!-- EMBED TAGS-->
   <meta content="website" property="og:type">
   <meta content="Kibbi's Site" property="og:site_name">
   <meta content="Art" property="og:title">
-  <meta content="My art examples, what I use to draw and other info." property="og:description">
+  <meta content="A showcase of my artwork and a short Q&A." property="og:description">
   <meta content="https://f2.toyhou.se/file/f2-toyhou-se/images/72400583_4xtURbQ7z2t9lad.png" property="og:image">
   <meta property="og:image:width" content="1280">
   <meta name="twitter:card" content="summary_large_image">
@@ -19,267 +20,252 @@
 </head>
 
 <body>
-  <div class="bigbox">
-    <div class="pagedoll">
-      <img title="i was drawn by @CatleTheFoxcat on twitter!" src="./../images/rodpagedoll.webp" style="height:300px">
+  <input type="checkbox" hidden id="barmove" />
+  <label class="sidebar" for="barmove">
+    <img src="../../res/global/logo.png" id="logo">
+    <img src="../../res/sidebar/click.png" id="click">
+    <div class="sidetext">
+      <p>Click on the + to open menus!</p>
+      <div style="padding:10px"><a href="../index.html"><img src="../../res/sidebar/mainbutton.png"></a></div>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="index.html"><img src="../../res/sidebar/artbutton.png"></a></div>
+        </summary>
+        <ul>
+          <li><a href="index.html">My Art</a></li>
+          <li><a href="commissions.html">Commissions</a></li>
+          <li><a href="../tos.html#art">TOS</a></li>
+        </ul>
+      </details>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="../projects/index.html"><img
+                src="../../res/sidebar/projectsbutton.png"></a>
+          </div>
+        </summary>
+        <ul>
+          <li><a href="../projects/website/index.html">This Website</a></li>
+        </ul>
+      </details>
+      <div style="padding:10px"><a href="../resources/index.html"><img src="../../res/sidebar/resourcesbutton.png"></a>
+      </div>
+      <div style="padding:10px"><a href="../blog/index.html"><img src="../../res/sidebar/blogbutton.png"></a></div>
+      <div style="padding:10px"><a href="../sitemap.html"><img src="../../res/sidebar/sitemapbutton.png"></a></div>
     </div>
-    <div class="constraint">
-      <img src="./../../res/logo.png" style="animation: 6.36247s ease-in-out 0s infinite hover">
-      <!-- main textbox -->
-      <br>
-      <div class="textbox">
-        <div class="tab">
-          <a class="tablinks" href="./../index.html">About</a>
-          <a class="tablinks" style="background-color:hsla(334, 76%, 19%, 0.57)" href="./../art/index.html">Art</a>
-          <a class="tablinks" href="./../gaming.html">Gaming</a>
-          <a class="tablinks" href="./../collections/arknights.html">Collections</a>
-          <a class="tablinks" href="./../resources/index.html">Resources</a>
-          <a class="tablinks" href="./../blog/index.html">Blog</a>
-            |
-            <a class="tablinks" href="./../sitemap.html">Sitemap</a>
+    <img src="../../res/sidebar/bgr.png" id="sidebg">
+  </label>
+  <div class="darkener"></div>
+
+  <!-- MAIN BODY -->
+  <div class="constraint">
+    <div class="textbox">
+      <h1>art</h1>
+      <p>A hobby I've been doing since I was 3. From furry animation memes to overcomplicated human designs, I try
+        everything I feel like would be fun.<br>Click on the thumbnails to see the full image.<br>
+      <h3>Headshots</h3>
+      <div style="display:inline-block">
+        <a class="lightbox" href="#arthead1">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/rodchurchauhead.png">
+        </a>
+        <div class="lightbox-target" id="arthead1">
+          <img src="./../../res/art/fullres/rodchurchauhead.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead12"></a>
+          <a class="lightbox-right" href="#arthead2"></a>
         </div>
-        <div id="Art" class="tabcontent">
-          <a class="arttab" href="./../art/index.html">Recent Drawings</a>
-          <a class="arttab" href="./../art/commissions.html">Commissions</a>
-          <a class="arttab" href="./../art/tos.html">TOS</a>
-          <p>
-            I mean, this is literally all I have going on. I draw and
-            post it to Twitter sometimes.<br>Click on the thumbnails to see the full image.<br>
-
-          <h3>Headshots</h3>
-          <div style="display:inline-block">
-            <a class="lightbox" href="#arthead1">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/rodchurchauWEEEthumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthead1">
-              <img src="./../../res/artwork/fullres/rodchurchauWEEE.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead12"></a>
-              <a class="lightbox-right" href="#arthead2"></a>
-            </div>
-            <a class="lightbox" href="#arthead2">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/swaghaverswaythumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthead2">
-              <a href="https://toyhou.se/22464389.my-sona">
-                <h3 style="top:50px">Art for theswaghaver</h3>
-              </a>
-              <img src="./../../res/artwork/fullres/swaghaversway.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead1"></a>
-              <a class="lightbox-right" href="#arthead3"></a>
-            </div>
-            <a class="lightbox" href="#arthead3">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/yansmilethumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthead3">
-              <img src="./../../res/artwork/fullres/yansmile.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead2"></a>
-              <a class="lightbox-right" href="#arthead4"></a>
-            </div>
-            <a class="lightbox" href="#arthead4">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/fullres/kibwink.webp">
-            </a>
-            <div class="lightbox-target" id="arthead4">
-              <img src="./../../res/artwork/fullres/kibwink.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead3"></a>
-              <a class="lightbox-right" href="#arthead5"></a>
-            </div>
-            <a class="lightbox" href="#arthead5">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/nwluheadthumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthead5">
-              <img src="./../../res/artwork/fullres/nwluhead.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead4"></a>
-              <a class="lightbox-right" href="#arthead6"></a>
-            </div>
-            <a class="lightbox" href="#arthead6">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/rodblink.webp">
-            </a>
-            <div class="lightbox-target" id="arthead6">
-              <img src="./../../res/artwork/rodblink.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead4"></a>
-              <a class="lightbox-right" href="#arthalf1"></a>
-            </div>
-          </div>
-
-          <h3>Halfbodies</h3>
-          <div style="display:inline-block">
-            <a class="lightbox" href="#arthalf1">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/teyahairtiethumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthalf1">
-              <img src="./../../res/artwork/fullres/teyahairtie.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthead5"></a>
-              <a class="lightbox-right" href="#arthalf2"></a>
-            </div>
-            <a class="lightbox" href="#arthalf2">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/eoeanddendritethumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthalf2">
-              <h3 style="top:50px">Art for <a href="https://toyhou.se/20583293.emanation-of-energy">EOE</a> and <a
-                  href="https://toyhou.se/20123871.dendrite">Dendrite</a></h3>
-              <img src="./../../res/artwork/fullres/eoeanddendrite.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthalf1"></a>
-              <a class="lightbox-right" href="#arthalf3"></a>
-            </div>
-            <a class="lightbox" href="#arthalf3">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/anastasiaartfightthumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthalf3">
-              <a href="https://toyhou.se/4694410.anastasia">
-                <h3 style="top:50px">Art for 556CH0CL8</h3>
-              </a>
-              <img src="./../../res/artwork/fullres/anastasiaartfight.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthalf2"></a>
-              <a class="lightbox-right" href="#arthalf4"></a>
-            </div>
-            <a class="lightbox" href="#arthalf4">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/teyawaterthumb.webp">
-            </a>
-            <div class="lightbox-target" id="arthalf4">
-              <img src="./../../res/artwork/fullres/teyawater.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthalf3"></a>
-              <a class="lightbox-right" href="#artfull1"></a>
-            </div>
-          </div>
-
-          <h3>Fullbodies</h3>
-          <div style="display:inline-block">
-            <a class="lightbox" href="#artfull1">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/nyawulfullbodythumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull1">
-              <a href="https://steamcommunity.com/profiles/76561198099467526/">
-                <h3 style="top:50px">Art for Nyawul</h3>
-              </a>
-              <img src="./../../res/artwork/fullres/nyawulfullbody.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#arthalf4"></a>
-              <a class="lightbox-right" href="#artfull2"></a>
-            </div>
-            <a class="lightbox" href="#artfull2">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/gregorfullbodythumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull2">
-                <h3 style="top:50px">Art for dr.depressed</h3>
-              <img src="./../../res/artwork/fullres/gregorfullbody.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull1"></a>
-              <a class="lightbox-right" href="#artfull3"></a>
-            </div>
-            <a class="lightbox" href="#artfull3">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/wheatlythumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull3">
-              <img src="./../../res/artwork/pagedoll/wheatly.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull2"></a>
-              <a class="lightbox-right" href="#artfull4"></a>
-            </div>
-            <a class="lightbox" href="#artfull4">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/nyancatsgonfullthumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull4">
-              <img src="./../../res/artwork/fullres/nyancatsgonfull.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull3"></a>
-              <a class="lightbox-right" href="#artfull5"></a>
-            </div>
-            <a class="lightbox" href="#artfull5">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/christmasteyathumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull5">
-              <img src="./../../res/artwork/fullres/christmasteya.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull4"></a>
-              <a class="lightbox-right" href="#artfull6"></a>
-            </div>
-            <a class="lightbox" href="#artfull6">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/randyfullthumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull6">
-              <img src="./../../res/artwork/fullres/randyfull.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull5"></a>
-              <a class="lightbox-right" href="#artfull7"></a>
-            </div>
-            <a class="lightbox" href="#artfull7">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/wigyfullthumb.webp">
-            </a>
-            <div class="lightbox-target" id="artfull7">
-              <a href="https://www.tumblr.com/kytemoon">
-                <h3 style="top:50px">Art for kytemoon</h3>
-              </a>
-              <img src="./../../res/artwork/fullres/wigyfull.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull6"></a>
-              <a class="lightbox-right" href="#artother1"></a>
-            </div>
-          </div>
-
-          <h3>Other</h3>
-          <div style="display:inline-block">
-            <a class="lightbox" href="#artother1">
-              <img class="artimgs" style="width:180px" src="./../../res/artwork/thumb/swaghavermodelthumb.webp">
-            </a>
-            <div class="lightbox-target" id="artother1">
-              <a href="https://toyhou.se/22464389.my-sona">
-                <h3 style="top:50px">Art for theswaghaver</h3>
-              </a>
-              <img src="./../../res/artwork/fullres/swaghavermodel.webp">
-              <a class="lightbox-close" href="#"></a>
-              <a class="lightbox-left" href="#artfull7"></a>
-              <a class="lightbox-right" href="#arthead1"></a>
-            </div>
-          </div>
-          <br><br>
-          <a href="./more.html">Here's a page with more of my art.</a>
-          <h3>Q&A</h3>
-          <div style="text-align:left;">
-            <h4>What programs do you use for drawing?</h4>
-            <p>
-              PC - Medibang Paint Pro or MSPaint. <br>Mobile - ibisPaintX.<br>Other - Flipnote (3DS).
-            </p>
-            <h4>What about animation?</h4>
-            <p>
-              Tweening - Adobe After Effects. <br>Frame by frame - Flipaclip, Flipnote.
-            </p>
-            <h4>What about hardware?</h4>
-            <p>
-              I use a Huion Kamvas GT-221 Pro. It's one of those big tablets with a screen. For mobile, I have a Samsung
-              Note 10, which comes with a stylus.
-            </p>
-            <h4>Down for an art trade?</h4>
-            <p>Yes! Always!</p>
-            <h4>Can I commission you?</h4>
-            <p>
-              Check the Commissions tab and see what I currently offer!
-            </p>
-          </div>
+        <a class="lightbox" href="#arthead2">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/swaghavergif.gif">
+        </a>
+        <div class="lightbox-target" id="arthead2">
+          <a href="https://toyhou.se/22464389.my-sona">
+            <h3 style="top:50px">Art for theswaghaver</h3>
+          </a>
+          <img src="./../../res/art/fullres/swaghavergif.gif">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead1"></a>
+          <a class="lightbox-right" href="#arthead3"></a>
+        </div>
+        <a class="lightbox" href="#arthead3">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/nwluwanderlust.png">
+        </a>
+        <div class="lightbox-target" id="arthead3">
+          <img src="./../../res/art/fullres/nwluwanderlust.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead2"></a>
+          <a class="lightbox-right" href="#arthead4"></a>
+        </div>
+        <a class="lightbox" href="#arthead4">
+          <img class="borderimg" style="width:180px" src="./../../res/art/fullres/kibwink.gif">
+        </a>
+        <div class="lightbox-target" id="arthead4">
+          <img src="./../../res/art/fullres/kibwink.gif">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead3"></a>
+          <a class="lightbox-right" href="#arthead5"></a>
+        </div>
+        <a class="lightbox" href="#arthead5">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/simonpfp.png">
+        </a>
+        <div class="lightbox-target" id="arthead5">
+          <img src="./../../res/art/fullres/simonpfp.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead4"></a>
+          <a class="lightbox-right" href="#arthalf1"></a>
         </div>
       </div>
-      <div>
-        <iframe src="https://john.citrons.xyz/embed?ref=ketraline.neocities.org"
-          style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
+
+      <h3>Halfbodies</h3>
+      <div style="display:inline-block">
+        <a class="lightbox" href="#arthalf1">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/teyawater.png">
+        </a>
+        <div class="lightbox-target" id="arthalf1">
+          <img src="./../../res/art/fullres/teyawater.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthead5"></a>
+          <a class="lightbox-right" href="#arthalf2"></a>
+        </div>
+        <a class="lightbox" href="#arthalf2">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/eoeanddendrite.png">
+        </a>
+        <div class="lightbox-target" id="arthalf2">
+          <h3 style="top:50px">Art for <a href="https://toyhou.se/20583293.emanation-of-energy">EOE</a> and <a
+              href="https://toyhou.se/20123871.dendrite">Dendrite</a></h3>
+          <img src="./../../res/art/fullres/eoeanddendrite.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthalf1"></a>
+          <a class="lightbox-right" href="#arthalf3"></a>
+        </div>
+        <a class="lightbox" href="#arthalf3">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/anastasiaartfight.png">
+        </a>
+        <div class="lightbox-target" id="arthalf3">
+          <a href="https://toyhou.se/4694410.anastasia">
+            <h3 style="top:50px">Art for 556CH0CL8</h3>
+          </a>
+          <img src="./../../res/art/fullres/anastasiaartfight.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthalf2"></a>
+          <a class="lightbox-right" href="#arthalf4"></a>
+        </div>
+        <a class="lightbox" href="#arthalf4">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/lavretcomm.png">
+        </a>
+        <div class="lightbox-target" id="arthalf4">
+          <img src="./../../res/art/fullres/lavretcomm.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthalf3"></a>
+          <a class="lightbox-right" href="#arthalf5"></a>
+        </div>
+        <a class="lightbox" href="#arthalf5">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/kai.png">
+        </a>
+        <div class="lightbox-target" id="arthalf5">
+          <img src="./../../res/art/fullres/kai.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthalf4"></a>
+          <a class="lightbox-right" href="#artfull1"></a>
+        </div>
       </div>
-      <div>
-        <a href="https://itzzen.net/"><img src="./../images/buttons/itzzen.webp"></a>
-        <a href="https://ketraline.neocities.org/"><img src="./../images/buttons/ketraline.webp"></a>
-        <img src="./../images/buttons/queercoded.webp">
-        <img src="./../images/buttons/cssisawesome.webp">
-        <img src="./../images/buttons/transyourgender.webp">
+
+      <h3>Fullbodies</h3>
+      <div style="display:inline-block">
+        <a class="lightbox" href="#artfull1">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/nyawulgmod.png">
+        </a>
+        <div class="lightbox-target" id="artfull1">
+          <a href="https://steamcommunity.com/profiles/76561198099467526/">
+            <h3 style="top:50px">Art for Nyawul</h3>
+          </a>
+          <img src="./../../res/art/fullres/nyawulgmod.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#arthalf5"></a>
+          <a class="lightbox-right" href="#artfull2"></a>
+        </div>
+        <a class="lightbox" href="#artfull2">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/catle.png">
+        </a>
+        <div class="lightbox-target" id="artfull2">
+          <h3 style="top:50px">Art for Catle</h3>
+          <img src="./../../res/art/fullres/catle.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#artfull1"></a>
+          <a class="lightbox-right" href="#artfull3"></a>
+        </div>
+        <a class="lightbox" href="#artfull3">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/wheatly.gif">
+        </a>
+        <div class="lightbox-target" id="artfull3">
+          <img src="./../../res/art/fullres/wheatlyfull.gif">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#artfull2"></a>
+          <a class="lightbox-right" href="#artfull4"></a>
+        </div>
+        <a class="lightbox" href="#artfull4">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/nyafull.png">
+        </a>
+        <div class="lightbox-target" id="artfull4">
+          <img src="./../../res/art/fullres/nyafull.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#artfull3"></a>
+          <a class="lightbox-right" href="#artfull5"></a>
+        </div>
+        <a class="lightbox" href="#artfull5">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/wigy.png">
+        </a>
+        <div class="lightbox-target" id="artfull5">
+          <a href="https://www.tumblr.com/kytemoon">
+            <h3 style="top:50px">Art for kytemoon</h3>
+          </a>
+          <img src="./../../res/art/fullres/wigy.png">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#artfull4"></a>
+          <a class="lightbox-right" href="#artother1"></a>
+        </div>
       </div>
+
+      <h3>Other</h3>
+      <div style="display:inline-block">
+        <a class="lightbox" href="#artother1">
+          <img class="borderimg" style="width:180px" src="./../../res/art/thumb/swaghavermodel.gif">
+        </a>
+        <div class="lightbox-target" id="artother1">
+          <a href="https://toyhou.se/22464389.my-sona">
+            <h3 style="top:50px">Art for theswaghaver</h3>
+          </a>
+          <img src="./../../res/art/fullres/swaghavermodel.gif">
+          <a class="lightbox-close" href="#"></a>
+          <a class="lightbox-left" href="#artfull7"></a>
+          <a class="lightbox-right" href="#arthead1"></a>
+        </div>
+      </div>
+      <br><br>
+      <h3>Q&A</h3>
+      <div style="text-align:left;">
+        <h4>What programs do you use for drawing?</h4>
+        <p>
+          PC - Medibang Paint Pro or MSPaint. <br>Mobile - ibisPaintX.<br>Other - Flipnote (3DS).
+        </p>
+        <h4>What about animation?</h4>
+        <p>
+          Tweening - Adobe After Effects. <br>Frame by frame - Flipaclip, Flipnote.
+        </p>
+        <h4>What about hardware?</h4>
+        <p>
+          I use a Huion Kamvas GT-221 Pro. It's one of those big tablets with a screen. For mobile, I have a Samsung
+          Note 10, which comes with a stylus.
+        </p>
+        <h4>Down for an art trade?</h4>
+        <p>Yes! Always!</p>
+        <h4>Can I commission you?</h4>
+        <p>
+          Check the Commissions tab and see what I currently offer!
+        </p>
+      </div>
+
     </div>
   </div>
+
 </body>
 
 </html>
