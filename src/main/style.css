@@ -252,7 +252,7 @@ textarea{
 }
 
 a.lightbox-close {
-  background-image: url("./../res/global/close.png");
+  background-image: url("../res/global/close.png");
   width: 80px;
   margin: 10px;
   height: 80px;
@@ -263,7 +263,7 @@ a.lightbox-close {
 }
 
 a.lightbox-left {
-  background-image: url("./../res/global/arrowleft.png");
+  background-image: url("../res/global/arrowleft.png");
   width: 80px;
   margin: 10px;
   height: 80px;
@@ -274,7 +274,7 @@ a.lightbox-left {
 }
 
 a.lightbox-right {
-  background-image: url("./../res/global/arrowright.png");
+  background-image: url("../res/global/arrowright.png");
   width: 80px;
   margin: 10px;
   height: 80px;
