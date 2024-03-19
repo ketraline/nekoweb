@@ -86,6 +86,13 @@ textarea{
   color:white
 }
 
+table, tr, th, td{
+  padding:8px;
+  border-collapse:collapse;
+  border:2px solid rgb(246, 255, 121); 
+  margin:auto;
+}
+
 /* SIDEBAR RELATED */
 
 #logo {
@@ -300,6 +307,10 @@ a.lightbox-right {
 .lightbox-target:target a.lightbox-close {
   top: 0;
 }
+
+/* POKETCG */
+
+
 
 /* ANIMATIONS */
 

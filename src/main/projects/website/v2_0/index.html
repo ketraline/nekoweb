@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="res/index.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kibbi's Home</title>
+  <style>
+    body {
+      font-family: 'videotype', sans-serif;
+      color: #ffffff;
+      background: linear-gradient(0deg, #493269, #813d59, #cb5867, #e08572, #e6b646, #e08572, #cb5867, #813d59, #493269);
+      background-size: 100% 800%;
+      background-attachment: fixed;
+      animation: gradient 15s ease infinite;
+      padding: 0px;
+      margin: 0px;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 0% 0%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    html,
+    body {
+      min-height: 100vh;
+      min-width: 100vh;
+      margin: 0
+    }
+
+    .clouds {
+      background-image: url("../v2_0/res/bg.webp");
+      background-attachment: fixed;
+      animation: cloudscroll 22s linear infinite;
+      background-repeat: repeat-x;
+      padding: 8px;
+      text-align: center;
+      flex: 1 1 auto;
+    }
+
+    @keyframes cloudscroll {
+      0% {
+        background-position: 0px 0px;
+      }
+
+      100% {
+        background-position: 760px 0px;
+      }
+    }
+
+    .pagedoll {
+      text-align: center;
+      max-width: 30%;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      z-index: 100;
+    }
+
+    .pagedoll img:hover {
+      opacity: 0.2;
+    }
+
+    .whatsnew {
+      text-align: left;
+      background-color: hsla(334, 76%, 19%, 0.57);
+      width: 600px;
+      height: 200px;
+      border-radius: 10px;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 12px;
+    }
+
+    html {
+      overflow-y: scroll;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+    }
+
+    html::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+
+    @font-face {
+      font-family: 'videotype';
+      src: url("../v2_0/res/videotype.woff");
+    }
+
+    ul li {
+      list-style-position: inside;
+      text-align: center;
+    }
+
+    .tab a {
+      font-family: 'videotype', sans-serif;
+      background-color: inherit;
+      color: white;
+      border: none;
+      margin: 0 auto;
+      padding: 8px 12px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .tab a:hover {
+      background-color: hsla(334, 76%, 19%, 0.57);
+    }
+
+    .borderimg {
+      border: 3px white solid;
+      border-radius: 3px;
+    }
+
+    .tab .active {
+      background-color: inherit;
+      color: #ffffff;
+    }
+
+    .tabcontent {
+      margin-top: 20px;
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    h3,
+    h4 {
+      color: #edbcd4;
+    }
+
+    .bigbox {
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+    }
+
+    .textbox {
+      overflow: hidden;
+      background-color: HSLA(318, 73%, 22%, 0.4);
+      border-radius: 25px;
+      margin: 10px;
+      padding: 30px;
+    }
+
+    .constraint {
+      position: relative;
+      text-align: center;
+      max-width: 1000px;
+      min-width: 730px;
+      width: 90%;
+      margin: auto;
+      padding: 50px;
+    }
+
+    a:link,
+    a:active {
+      color: #e5cfff;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #edbcd4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #8fceff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bigbox">
+    <div class="pagedoll">
+      <img src="res/teyapagedoll.webp" style="height:300px" />
+    </div>
+    <div class="clouds">
+      <div class="constraint">
+        <img src="res/logo.webp" style="animation: 6.36247s ease-in-out 0s infinite hover" />
+        <!-- main textbox -->
+        <p>still under construction! busy searching for earthend......</p>
+        <div class="textbox">
+          <div class="tab">
+            <a class="tablinks" style="background-color:hsla(334, 76%, 19%, 0.57)" href="/index.html">Home</a>
+            <a class="tablinks">Art</a>
+            <a class="tablinks">Gaming</a>
+            <a class="tablinks">Collections</a>
+            <a class="tablinks">Blog</a>
+          </div>
+          <!-- home tab -->
+          <div id="Home" class="tabcontent">
+            <p>
+              Hello, I'm Kibbi! Welcome to my website. This is a prettier
+              version of my old website code that never saw the light of day.
+              I'm not special in any way and probably don't deserve a whole
+              website about me, but what are you gonna do about it?
+            </p>
+
+            <h3>who am i?</h3>
+            <p>
+              I'm a random white
+              polish guy who has a wide range of interests. I'm an artist,
+              gaymer, huge data hoarder and a white guy name collector. I am a bit mentally ill and also have a slight
+              typing quirk (which I'm trying my best to keep off this website for aesthetic purposes).
+            </p>
+            <img style="width:100px" title="Bisexual/Bigender/Transgender" src="res/sexualitygenderstamp.webp" />
+            <img class="tooltip" title="he/she" style="width:100px" src="res/pronounstamp.webp" />
+            <img class="tooltip" title="Poland" style="width:100px" src="res/polandstamp.webp" />
+            <br />
+            <h3>my cat</h3>
+            <p>
+              Her name is Tuna! Look at her. She's my best friend, supporter
+              and hater at the same time. <br /><br />
+              <img class="borderimg" src="res/tuna1.webp" style="width:300px" />
+              <img class="borderimg" src="res/tuna2.webp" style="width:300px" />
+            </p>
+
+            <h3>whats new?</h3>
+            <div class="whatsnew">
+              <b>3/14/2023 -</b> a lot has changed - the site's code is now on github! converted all pngs to webp, they
+              should load faster now. sub tabs in the art category are now separated. made a new blog post!
+              <hr>
+              <b>2/3/2023 -</b> added a blog section, and made a new post!
+              <hr>
+              <b>1/30/2023 -</b> fixed a thing where the site would display poorly on mobile. it is now a bit better
+              <hr>
+              <b>1/29/2023 -</b> i finished the pokemon tcg database. the images might be broken but yea its all there
+              <hr />
+              <b>1/27/2023 -</b> we now have a little cloud overlay !!
+              <hr />
+              <b>1/25/2023 -</b> ANOTHER UPDATE BUT I ADDED A TEYA PAGEDOLL
+              AHHH IS SO CUTE !!!!!!!
+              <hr />
+              <b>1/25/2023 -</b> added the barebones collections page that ill
+              be slowly updating. also made the half ported poketcg database
+              available.
+              <hr />
+              <b>1/23/2023 -</b> lots of new stuff, including this section!
+              hope you enjoy :)
+            </div>
+            <h3>the only links you will need</h3>
+            <li>
+              Twitter, the platform I post on the most -
+              <a href="https://twitter.com/ketraline">@ketraline</a>
+            </li>
+            <li>
+              Instagram, the platform I post on the least -
+              <a href="https://instagram.com/ketraline">@ketraline</a>
+            </li>
+            <li>
+              Steam, the platform I game on the most -
+              <a href="https://steamcommunity.com/id/ketraline/">/id/ketraline</a>
+            </li>
+            <li>
+              Backloggery, a website with most of my game backlog -
+              <a href="https://backloggery.com/ketraline">ketraline</a>
+            </li>
+            <li>
+              ThemePlaza, the site I post 3DS themes to -
+              <a href="https://themeplaza.art/profile/Hori">Hori</a>
+            </li>
+            <li>
+              Toyhouse, a website for storing OCs and designs -
+              <a href="https://toyhou.se/ketraline">ketraline</a>
+            </li>
+            <li>
+              Discord - Only people I recognize, DM me on Twitter
+
+              <h3>sites that slay</h3>
+            </li>
+
+            <li>
+              <a href="https://itzzen.net">itzzen.net</a> - my friend's site
+              :D
+            </li>
+            <li>
+              <a href="https://ezgif.com/">ezgif.com</a> - GIF maker,
+              converter, just everything you'll need
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
