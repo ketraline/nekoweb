@@ -63,6 +63,23 @@
             <p>Yes, this is exactly what it looks like. Autism in its purest form as in I have made a database of all of my Pokemon cards. Why? I dunno. I just felt like it one day.</p>
         </div>
     </div>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <div class="table"></div>
 
+    <script>
+        let table = document.querySelector(".table");
+        (
+            async() => {
+                let workbook = XLSX.read(await (await fetch("./PokeTCG.xlsx")).arrayBuffer());
+                console.log(workbook);
+                let worksheet = workbook.SheetNames;
+                worksheet.forEach(name => {
+                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                    table.innerHTML += `
+                    <h3>${name}</h3>${html}
+                    `;
+                })
+            }
+        )()
+    </script>
 </html>
