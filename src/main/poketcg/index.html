@@ -61,9 +61,7 @@
             <h1>PokeTCG</h1>
             <p>Welcome to the passion project that made me want to kill myself everytime I looked at it back when I hosted my site on Replit. Eugh.</p>
             <p>Yes, this is exactly what it looks like. Autism in its purest form as in I have made a database of all of my Pokemon cards. Why? I dunno. I just felt like it one day.</p>
-            <details><summary>English Sets</summary><div class="ENsets"></div></details>
-            <details><summary>Japanese Sets</summary><div class="JPsets"></div></details>
-            <details><summary>Promo</summary><div class="promo"></div></details>
+            <div class="table"
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
@@ -77,8 +75,8 @@
                 let worksheet = workbook.SheetNames;
                 worksheet.forEach(name => {
                     let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
-                    workbook.Sheets[name].innerHTML += `
-                    ${html}
+                    table.innerHTML += `
+                    <details><summary>${name}</summary>${html}</details>
                     `;
                 })
             }
