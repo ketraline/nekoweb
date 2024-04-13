@@ -61,10 +61,12 @@
             <h1>PokeTCG</h1>
             <p>Welcome to the passion project that made me want to kill myself everytime I looked at it back when I hosted my site on Replit. Eugh.</p>
             <p>Yes, this is exactly what it looks like. Autism in its purest form as in I have made a database of all of my Pokemon cards. Why? I dunno. I just felt like it one day.</p>
+            <details><summary>English Sets</summary><div class="ENsets"></div></details>
+            <details><summary>Japanese Sets</summary><div class="JPsets"></div></details>
+            <details><summary>Promo</summary><div class="promo"></div></details>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <div class="table"></div>
 
     <script>
         let table = document.querySelector(".table");
@@ -73,12 +75,24 @@
                 let workbook = XLSX.read(await (await fetch("./PokeTCG.xlsx")).arrayBuffer());
                 console.log(workbook);
                 let worksheet = workbook.SheetNames;
-                worksheet.forEach(name => {
+                if (name = "English Sets"){
                     let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
-                    table.innerHTML += `
-                    <h3>${name}</h3>${html}
+                    ENsets.innerHTML += `
+                    ${html}
                     `;
-                })
+                }
+                else if (name = "Japanese Sets"){
+                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                    JPsets.innerHTML += `
+                    ${html}
+                    `;
+                }
+                else if(name = "Promo"){
+                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
+                    promo.innerHTML += `
+                    ${html}
+                    `;
+                }
             }
         )()
     </script>
