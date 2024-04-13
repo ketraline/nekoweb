@@ -75,24 +75,12 @@
                 let workbook = XLSX.read(await (await fetch("./PokeTCG.xlsx")).arrayBuffer());
                 console.log(workbook);
                 let worksheet = workbook.SheetNames;
-                if (name = "English Sets"){
+                worksheet.forEach(name => {
                     let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
-                    ENsets.innerHTML += `
+                    workbook.Sheets[name].innerHTML += `
                     ${html}
                     `;
-                }
-                else if (name = "Japanese Sets"){
-                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
-                    JPsets.innerHTML += `
-                    ${html}
-                    `;
-                }
-                else if(name = "Promo"){
-                    let html = XLSX.utils.sheet_to_html(workbook.Sheets[name]);
-                    promo.innerHTML += `
-                    ${html}
-                    `;
-                }
+                })
             }
         )()
     </script>
