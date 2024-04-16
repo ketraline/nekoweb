@@ -1,0 +1,27 @@
+name: Deploy to Nekoweb
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Prepare build
+        run: |
+          mkdir -p ./build
+          cp -r ./src/* ./build
+      - name: Deploy to Nekoweb
+        uses: mp-pinheiro/nekoweb-deploy@main
+        with:
+          API_KEY: ${{ secrets.API_KEY }}
+          BUILD_DIR: './build'
+          DEPLOY_DIR: '/'
+          CLEANUP: 'False'
+          NEKOWEB_PAGENAME: 'ketraline'
+      - uses: actions/download-artifact@v4
+      - name: Display structure of downloaded files
+        run: ls -R
