@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="./../../../res/global/wheatly.ico">
+  <link rel="stylesheet" href="./../../style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="max-age=200">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kibbi's Blog</title>
+
+  <!-- EMBED TAGS-->
+  <meta content="website" property="og:type">
+  <meta content="Kibbi's Blog" property="og:site_name">
+  <meta content="Cheap puzzle games (mostly about cats) I found on Steam over the years" property="og:title">
+  <meta content="Kibbi makes a list of cheap games on Steam that she likes. Most are about cats."
+    property="og:description">
+  <meta content="https://f2.toyhou.se/file/f2-toyhou-se/images/72400583_4xtURbQ7z2t9lad.png" property="og:image">
+  <meta property="og:image:width" content="1280">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta content="#7D0BEE" data-react-helmet="true" name="theme-color">
+</head>
+
+<body>
+  <input type="checkbox" hidden id="barmove" />
+  <label class="sidebar" for="barmove">
+    <img src="../../../res/global/logo.png" id="logo">
+    <img src="../../../res/sidebar/click.png" id="click">
+    <div class="sidetext">
+      <p>Click on the + to open menus!</p>
+      <div style="padding:10px"><a href="../../index.html"><img src="../../../res/sidebar/mainbutton.png"></a></div>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="../../art/index.html"><img src="../../../res/sidebar/artbutton.png"></a>
+          </div>
+        </summary>
+        <ul>
+          <li><a href="../../art/index.html">My Art</a></li>
+          <li><a href="../../art/commissions.html">Commissions</a></li>
+          <li><a href="../../tos.html#art">TOS</a></li>
+        </ul>
+      </details>
+      <details id="sidebardetails">
+        <summary>
+          <div style="padding:10px"><a href="../../projects/index.html"><img
+                src="../../../res/sidebar/projectsbutton.png"></a>
+          </div>
+        </summary>
+        <ul>
+          <li><a href="../../projects/website/index.html">This Website</a></li>
+          <li><a href="../../projects/poketcg/index.html">PokeTCG DB</a></li>
+        </ul>
+      </details>
+      <div style="padding:10px"><a href="../../resources/index.html"><img
+            src="../../../res/sidebar/resourcesbutton.png"></a>
+      </div>
+      <div style="padding:10px"><a href="../index.html"><img src="../../../res/sidebar/blogbutton.png"></a></div>
+      <div style="padding:10px"><a href="../../sitemap.html"><img src="../../../res/sidebar/sitemapbutton.png"></a>
+      </div>
+    </div>
+    <img src="../../../res/sidebar/bgr.png" id="sidebg">
+  </label>
+  <div class="darkener"></div>
+
+
+
+  <!-- MAIN BODY -->
+  <div class="constraint">
+    <div class="textbox">
+      <h3>The (re)making of a Pokemon TCG Database and why it was surprisingly fun</h3>
+      <h4>TL;DR</h4>
+      <p> Kibbi tries Javascript, hates both it and herself for using it, but it works out for the best.
+        <br><br>
+        <p>To preface, I want to formally apologize for giving into liberal agenda and using Javascript. I know. It's horrible. It killed your grandma. But it made a cool table, sooo...</p>
+        <p>Maybe you remember my previous blog post on how I created the original PokeTCG database. Well it probably comes as no surprise to say that it became completely unmanagable. So many mistakes, broken images, duplicate cards, thousands of lines of code... I just couldn't look at it anymore. Especially when making my new layout for the site, I dreaded the idea of redoing like 40 files of the Same Shit (it also had a separate stylesheet). So I looked for an automated solution.</p>
+        <img src="mercy.gif">
+        <h1>Google Sheets.</h1>
+        <p>Yeah. I was desperate. From my previous experimentation I thought it was the best way. And someone I know told me it's "pretty simple". And like, sure, it's simple in concept. But the horrors.</p>
+        <p>I didn't like the idea of having it up on Google Sheets mainly because it's hosted offsite and also I just don't like using Google services. But there was some positives - I already had a ready spreadsheet and Google has their own Sheets API.</p>
+        <p>I'm sorry, but have you ever TRIED using the Sheets API?! I don't know what I did wrong Genuinely but after getting THREE DIFFERENT PEOPLE to help me I gave up. Every solution caused 10 more new problems I hated it I wanted to cry. I mainly had problems with OAuth, which blocked outside access to the sheet completely even though it was set to be accessed by anyone with a link. I didn't feel like figuring out OAuth permissions or whatever, it requires you to submit like an appeal and for a Pokemon Card Database I genuinely do not care that much.</p>
+        <p>So I looked at the predecessor of Google Sheets and decided to work with that.</p>
+        <img src="mercy.gif">
+        <h1>MICROSOFT EXCEL.</h1>
+        <h3>(and SheetJS)</h3>
+        <p>This actually resolved my main gripe with Google Sheets - it allowed me to host the file on my website! Using the =HTML function I imported all of the tables I had made in code and copied them over to a spreadsheet. Now I just need to upload it to Neocities and-</p>
+        <img src="poketcgnotallowed.png">
+        <h2><b>FUCK!!!!!!!!!</b></h2>
+        <p>After moving site hosts to Nekoweb I could FINALLY start my project. It was smooth sailing, except for the fact I don't know JavaScript. But with the SheetJS documentation and help of some more knowledgeable people, I got it to read the spreadsheet!</p>
+        <p>So I now have a little spreadsheet I can just edit and upload to the site without writing 100s of lines of code! Only drawback of this is that now the cards don't have images, if I remember correctly that's a PRO feature and also in general importing images to spreadsheets is a little borked, so I might have to figure out a different way to do that. I also want to make a little filter system but I'll need to learn a little more JS for that.</p>
+        <p>Not a very interesting blog, but I think the struggle was worth it.</p>
+        <a href="./../index.html">
+          <p> Back to blog index
+        </a>
+    </div>
+  </div>
+
+</body>
+
+</html>
