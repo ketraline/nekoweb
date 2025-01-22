@@ -85,18 +85,44 @@
           </div>
         </div>
       </div>
+      <h3>chitchat</h3>
+      <form id="askform" enctype="multipart/form-data" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="8cffff97-546c-481e-9efc-5fb661ad45ed">
+        <input type="text" name="Name" placeholder="your name" required><br><br>
+        <textarea name="Message" placeholder="message" required style="width:300px;height:200px"></textarea><br><br>
+        <button type="submit">send!</button>
+      </form>
       <h3>updates</h3>
       <div class="updates">
         <iframe id="updates-text" src="updates.html" style="border:none; height:100%;width:100%"></iframe>
       </div>
       <h3>my buttons</h3>
       <img src="../res/buttons/ketraline.webp">
-      <textarea readonly style="width:80%;height:40px">&lt;a href=&quot;https://ketraline.neocities.org/&quot;&gt;&lt;img src=&quot;https://ketraline.neocities.org/res/buttons/ketraline.webp&quot;&gt;&lt;/a&gt;</textarea>
+      <textarea readonly style="width:80%;height:42px;overflow: hidden;">&lt;a href=&quot;https://ketraline.nekoweb.org/&quot;&gt;&lt;img src=&quot;https://ketraline.nekoweb.org/res/buttons/ketraline.webp&quot;&gt;&lt;/a&gt;</textarea>
       <br><br>
-      <textarea readonly style="width:80%;height:40px">&lt;a href=&quot;https://ketraline.neocities.org/&quot;&gt;&lt;img src=&quot;https://ketraline.neocities.org/res/buttons/ketraline.gif&quot;&gt;&lt;/a&gt;</textarea>
+      <textarea readonly style="width:80%;height:42px;overflow: hidden;">&lt;a href=&quot;https://ketraline.nekoweb.org/&quot;&gt;&lt;img src=&quot;https://ketraline.nekoweb.org/res/buttons/ketraline.gif&quot;&gt;&lt;/a&gt;</textarea>
       <img src="../res/buttons/ketraline.gif">
     </div>
   </div>
 </body>
-
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', form.action, true);
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.onreadystatechange = () => {
+          if (xhr.readyState !== XMLHttpRequest.DONE) return;
+          if (xhr.status === 200) {
+              form.reset();
+              alert('thanks for the message! check back soon for a reply.');
+          } else {
+              alert('something didnt work. please try again later!');
+          }
+      };
+      xhr.send(formData);
+  });
+</script>
 </html>

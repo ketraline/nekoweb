@@ -57,6 +57,12 @@ ul {
   border-image: url('./../res/global/subborder.gif') 50 stretch;
 }
 
+button{
+  background-color: #3a00ac;
+  color:#ffd900;
+  border:outset 2px #ffd900;
+}
+
 a:link,
 a:visited {
   color: rgb(241, 255, 43);
@@ -79,8 +85,9 @@ summary>div {
   vertical-align: middle;
 }
 
-textarea {
+textarea,input {
   resize: none;
+  padding:5px;
   outline: solid 1px rgb(241, 255, 43);
   background-color: rgba(15, 8, 125, 0.8);
   color: white
