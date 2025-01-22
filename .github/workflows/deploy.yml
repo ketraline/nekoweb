@@ -1,14 +1,19 @@
-  - name: deploy2nekoweb
-  # You may pin to the exact commit or the version.
-  # uses: deploy2nekoweb/deploy2nekoweb@582191d07adee24037d8ca5897d5fbc2f078b4a0
-  uses: deploy2nekoweb/deploy2nekoweb@v4
-  with:
-    # Your nekoweb API key.
-    nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
-    # Your nekoweb cookie. (Required for Recently Updated feature)
-    nekoweb-cookie: # optional
-    # The nekoweb folder to deploy to.
-    nekoweb-folder: /src/
-    # The directory you would like to deploy.
-    directory: src
-          
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: deploy2nekoweb
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      # your build step here
+        
+      - name: deploy2nekoweb
+        uses: deploy2nekoweb/deploy2nekoweb@v4
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-folder: 'src'
+          directory: 'src'
+
