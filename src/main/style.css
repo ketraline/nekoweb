@@ -63,6 +63,10 @@ button{
   border:outset 2px #ffd900;
 }
 
+hr{
+  color:#ffd900
+}
+
 a:link,
 a:visited {
   color: rgb(241, 255, 43);
@@ -246,6 +250,18 @@ td {
     grid-template-columns: 75% 25%;
     justify-content: center;
   }
+}
+
+.responses{
+  display:flex;
+}
+
+.response{
+  background-color: hsla(244, 90%, 26%, 0.8);
+  height: 320px;
+  width:40%;
+  border: 4px solid transparent;
+  border-image: url('./../res/global/subborder.gif') 50 stretch;
 }
 
 .box-1 {
