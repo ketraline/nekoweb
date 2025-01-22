@@ -4,11 +4,11 @@
   uses: deploy2nekoweb/deploy2nekoweb@v4
   with:
     # Your nekoweb API key.
-    nekoweb-api-key: 
+    nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
     # Your nekoweb cookie. (Required for Recently Updated feature)
     nekoweb-cookie: # optional
     # The nekoweb folder to deploy to.
-    nekoweb-folder: ./
+    nekoweb-folder: /src/
     # The directory you would like to deploy.
     directory: src
           
