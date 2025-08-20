@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'videotype';
-  src: url("res/fonts/videotype/videotype.woff");
+  src: url("res/fonts/videotype.woff");
 }
 
 html {
@@ -31,12 +31,24 @@ body {
 }
 
 h1 {
+  font-family: 'videotype', sans-serif;
   margin-top: 0px;
+  color: white;
+}
+
+h2, h3, p {
+  font-family: 'videotype', sans-serif;
+  color: white;
 }
 
 ul {
   margin-left: -50px;
   list-style-position: inside;
+  color: white;
+}
+
+li::marker {
+  color: white;
 }
 
 .pagedoll {
@@ -69,12 +81,14 @@ hr{
 
 a:link,
 a:visited {
+  font-family: 'videotype', sans-serif;
   color: rgb(241, 255, 43);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
+  font-family: 'videotype', sans-serif;
   color: #ff8800;
   background-color: transparent;
   text-decoration: none;
@@ -155,6 +169,7 @@ td {
 #sidebardetails>summary {
   list-style-type: '+';
   font-size: 20px;
+  color: white;
 }
 
 #sidebardetails[open]>summary {
